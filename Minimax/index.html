@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en us">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Fredoka+One&display=swap" rel="stylesheet">
+    <link href="style.css" type="text/css" rel="stylesheet">
+    <title>Tic Tac Toe</title>
+</head>
+
+<body>
+    <div class="home-container">
+        <div class="title">Tic Tac Toe</div>
+        <div class="player-buttons">
+            <span class="player-choices">Players</span>
+            <button class="one-player btn"></button>
+            <button class="two-player btn"></button>
+        </div>
+        <form action="javascript:void(0);">
+            <div class="player-inputs">
+                <div class="player-1-input">
+                    <span>✕</span>
+                    <input name="p1" placeholder="Player 1 Name">
+                </div>
+                <div class="player-2-input">
+                    <span>O</span>
+                    <input name="p2" placeholder="Player 2 Name">
+                </div>
+            </div>
+        </form>
+        <div class="play-button">
+            <button class="play">PLAY</button>
+        </div>
+    </div>
+    <div class="game-container">
+        <button class="home-button">← Home</button>
+        <div class="scores">
+            <div class="player-container">
+                <div class="player-name"></div>
+                <div class="player-score">0</div>
+            </div>
+            <div class="tie-container">
+                <div class="tie-name">Ties</div>
+                <div class="tie-score"></div>
+            </div>
+            <div class="player2-container">
+                <div class="player2-name"></div>
+                <div class="player2-score"></div>
+            </div>
+        </div>
+        <div class="results-container">
+            <div class="results-banner"></div>
+        </div>
+        <div class="board-container">
+            <div class="board">
+                <div class="grid-cell" data-position="0"></div>
+                <div class="grid-cell" data-position="1"></div>
+                <div class="grid-cell" data-position="2"></div>
+                <div class="grid-cell" data-position="3"></div>
+                <div class="grid-cell" data-position="4"></div>
+                <div class="grid-cell" data-position="5"></div>
+                <div class="grid-cell" data-position="6"></div>
+                <div class="grid-cell" data-position="7"></div>
+                <div class="grid-cell" data-position="8"></div>
+            </div>
+        </div>
+        <div class="button-container">
+            <button class="newgame-button">New Game</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
